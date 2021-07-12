@@ -14,9 +14,16 @@
     
       <nav class="nav">
         <a id="logo" href="./index.html"
-          >Alex <span id="logo__bold">Pascu</span></a
-        >
-        <ul class="nav__links">
+          >Alex <span id="logo__bold">Pascu</span>
+        </a>
+        
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        
+          <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">About Me</a>
           </li>
@@ -56,10 +63,23 @@
     </section>
 
     <section id="section--2">
+      <h2 class="section__title"">Projects</h2>
 
       <div class="section">
-        <h2 class="section__title">Projects</h2>
-        <h3 class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos quia, <br>impedit doloremque ut facere odio. Distinctio, in necessitatibus ab velit blanditiis vel officiis impedit! Debitis illo autem quidem voluptate accusamus voluptas incidunt. Ullam magnam quae quibusdam dolorum nihil, labore quidem, quisquam velit in aperiam ipsum corporis rerum id fugit suscipit harum maxime explicabo pariatur quod fugiat ducimus animi praesentium? Id nulla tempora consequatur atque, fugit laudantium veritatis amet, nam, architecto possimus saepe! Labore error ipsa officiis obcaecati harum repellendus enim ut. Animi dolor omnis doloribus culpa dolorum expedita dicta vitae optio beatae eos architecto non qui modi cum incidunt, repudiandae sint. Alias corrupti odio odit eveniet ut reiciendis debitis officia eaque non, voluptates neque quia, sequi in id deleniti necessitatibus illo magni fugit, vitae aperiam sunt velit earum! Ab, vel ea assumenda adipisci impedit amet iste hic animi deserunt, molestiae cumque dolorem soluta. Aliquam facere sed dolore voluptates magni.</h3>
+        <div class="container">
+  <div class="card">
+    <img src="img/altumcode-oZ61KFUQsus-unsplash.jpg" alt="">
+    <div class="card__description">Project1</div>
+  </div>
+  <div class="card">
+    <img src="img/ben-kolde-bs2Ba7t69mM-unsplash.jpg" alt="">
+    <div class="card__description">Project2 </div>
+  </div>
+  <div class="card">
+    <img src="img/true-agency-o4UhdLv5jbQ-unsplash.jpg" alt="">
+    <div class="card__description">Project3</div>
+  </div>
+  </div>
       </div>
     </section>
 
@@ -68,8 +88,9 @@
       <div class="section">
         <h2 class="section__title" id="logo_bottom">Alex <span id="bold_bottom">Pascu</span></h2>
       
-        <div class="contact_form">
+        
           <form>
+            <div class="contact_form">
            <div class="data">
     
             <label for="fname">Name</label>
@@ -82,22 +103,24 @@
             <input type="text" id="subject" name="Subject" placeholder="Enter Subject">
           </div>
           
-           <div class="message">       
+           <div class="data">       
             <label for="Message">Message</label>
             <textarea id="message" name="Message" placeholder="Your message" style="height:200px"></textarea>
-            <div class="submit">
-              <input type="submit" value="Submit">
-            </div>  
-          </div>
-
-          </form>
+            </div>
         </div>
+        <input type="submit" value="Submit"class="submit">
+        </form>
+        
+          
+      </div>   
 <div class="social">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-instagram"></a>
 </div>   
-      </div>
+
+
+<script src="script.js"></script>
     </section>
   </body>
 </html>

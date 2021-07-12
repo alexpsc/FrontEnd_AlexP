@@ -1,0 +1,28 @@
+*{
+margin: 0 auto;
+padding: 0;
+font-family: Verdana;
+}
+.background{
+    opacity: 40%;
+    position: absolute;
+    height: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    z-index: 1;
+    position: relative;
+    color: #AAAAAA;
+
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

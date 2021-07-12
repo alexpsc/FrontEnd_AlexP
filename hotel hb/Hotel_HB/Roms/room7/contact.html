@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact us</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+			}
+
+			.container {
+				width: 600px;
+				margin: 0 auto;
+			}
+
+			.title {
+				margin: 20px 0;
+			}
+
+			.color {
+				color: #a4ebf3;
+			}
+
+			p,
+			.form-control {
+				margin-bottom: 10px;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			input {
+				height: 25px;
+			}
+
+			input,
+			textarea {
+				display: flex;
+				border: 1px solid #aaaaaa;
+				width: 100%;
+			}
+			.submit-btn {
+				margin-top: 10px;
+				padding: 10px;
+				background: black;
+				color: white;
+				border-radius: 5px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3 class="title"><span class="color">Contact</span> us</h3>
+			<p>Please fill out the form bellow to contact us</p>
+
+			<form action="#">
+				<div class="form-control">
+					<label for="name">Name</label>
+					<input type="text" id="name" />
+				</div>
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input type="text" id="email" />
+				</div>
+				<div class="form-control">
+					<label for="message">Message</label>
+					<textarea cols="30" rows="10" id="message"></textarea>
+				</div>
+				<div class="form-control">
+					<button type="submit" class="submit-btn">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

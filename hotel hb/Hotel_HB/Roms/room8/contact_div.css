@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-info {
+	/* background-color: antiquewhite; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 30px;
+}
+#location {
+	background-color: #ccf2f4;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+}
+#phone {
+	background-color: #a4ebf3;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+}
+#email {
+	background-color: #f4f9f9;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+}
+.icon {
+	font-weight: bolder;
+}
+#main i {
+	font-size: 25px;
+}
+#email > i {
+	font-size: 30px;
+}

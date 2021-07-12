@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#review-container{
+    background-image: url("https://www.hotelsofgreece.com/cyclades/mykonos/harmony/harmony-hotel-mykonos-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+    height:420px;
+    margin: auto;
+}
+
+#review-title{
+    color: white;
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.review{
+    background-color: #F4F9F9;
+    border-radius: 15px;
+    display: flex;
+    margin: 15px 20px 15px 20px;
+}
+
+.review > img{
+    width: 100px;
+    height: 100px;
+    margin: 15px 15px;
+}
+
+#review-text{
+    margin-top: 40px;
+}
