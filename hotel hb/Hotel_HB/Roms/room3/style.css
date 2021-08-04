@@ -1,0 +1,30 @@
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.overphoto {
+    background-image: url("http://cdn.cnn.com/cnnnext/dam/assets/190903131748-greek-luxury-seaside-hotels---grecotel-mykonos-blu---infinity-pool-1.jpg");
+    padding: 5px;
+    position: fixed;
+}
+
+.history {
+    background-color: #CCF2F4;
+    width: 50%;
+    text-align:center;
+    padding:20px ;
+    float:right
+}
+
+.btn-hotel
+{
+    background-color: black;
+    color:white;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#history-title {
+    color: #AAAAAA;
+}

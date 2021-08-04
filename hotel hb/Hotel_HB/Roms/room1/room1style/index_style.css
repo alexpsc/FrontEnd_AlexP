@@ -1,0 +1,31 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+    width: 100%;
+    background-color: #A4EBF3;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+.lista_butoane li
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+.logouri li
+{
+    display: inline-block;
+}
+.logo_numar
+{
+    display: flex;
+}
+.logo
+{
+    font-size: 30px;
+}

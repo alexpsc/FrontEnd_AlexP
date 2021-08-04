@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hotel</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/0dda3df3bc.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="logo">
+				<i class="fas fa-h-square"></i>
+				<i class="fab fa-bootstrap"></i>
+			</div>
+			<div class="menu">
+				<ul class="button-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="contact-container">
+			<h3 class="contact-title"><span class="text-dark">Contact</span> us</h3>
+			<p class="contact-info">Please fill out the form bellow to contact us</p>
+
+			<form action="#">
+				<div class="form-control">
+					<label class="contact-label" for="name">Name</label>
+					<input class="contact-input" type="text" id="name" />
+				</div>
+				<div class="form-control">
+					<label class="contact-label" for="email">Email</label>
+					<input class="contact-input" type="text" id="email" />
+				</div>
+				<div class="form-control">
+					<label class="contact-label" for="message">Message</label>
+					<textarea
+						class="contact-textarea"
+						cols="30"
+						rows="10"
+						id="message"
+					></textarea>
+				</div>
+				<div class="form-control">
+					<button type="submit" class="submit-btn">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div id="contact-info">
+			<div id="location" class="contact-info-item">
+				<i class="fas fa-hotel"></i>
+				<p class="icon">Location</p>
+				<br />
+				<p class="descr">Str. Independentei Nr. 290</p>
+			</div>
+			<div id="phone" class="contact-info-item">
+				<i class="fas fa-phone"></i>
+				<p class="icon">Phone</p>
+				<br />
+				<p class="descr">+40734121221</p>
+			</div>
+			<div id="email" class="contact-info-item">
+				<i class="fab fa-mailchimp"></i>
+				<p class="icon">E-mail</p>
+				<br />
+				<p class="descr">office@HBHotel.com</p>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Hotel HB &copy; 2021 All Rights Reserved</p>
+		</div>
+	</body>
+</html>
