@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Javascript Control Structures</h1>
+    <div class="container">
+      1. Using control structures, do the following: <br />
+      <hr />
+      a. display in the console the numbers from 1 to 20.<br />
+      <button class="click" onclick="displayNumerFrom1to20()">Click</button
+      ><br />b. display in the console the odd numbers from 1 to 20<br />
+      <button class="click" onclick="displayOddNumerFrom1to20()">Click</button>
+    </div>
+    <div class="container">
+      For var list = [2, 3, 5, 7, 5, 3];
+      <hr />
+      a. compute the sum of the elements of an array and display it in the
+      console <br /><button
+        class="click"
+        onclick="computeSumOfElementsInArray()"
+      >
+        Click
+      </button>
+      <br />b. compute the maximum of the elements of an array and display it in
+      the console
+      <button class="click" onclick="computeMaxOfElementsInArray()">
+        Click</button
+      ><br />c. compute how many times a certain element appears in an array<br />
+      <input
+        id="maxElement"
+        type="number"
+        placeholder="insert the index of Array (from 0 to 5)"
+        min="0"
+        max="5"
+        required
+      />
+      <button class="click" onclick="computeHowManyTimesIsAElementInArray()">
+        Click
+      </button>
+    </div>
+
+    <div class="container">
+      3. Write a program to print Fibonacci series of the first 50 terms: 0 1 1
+      2 3 5 8 13 24 .....<br />
+      <button class="click" onclick="printFirst50FibonacciNumbers()">
+        Click
+      </button>
+    </div>
+
+    <div class="container">
+      4. Write a program that prints the numbers from 1 to 100. <br />
+      <hr />
+      But for multiples of three print “Fizz” instead of the number and for the
+      multiples of five print “Buzz”.<br />
+      For numbers which are multiples of both three and five print “FizzBuzz”<br />
+      <button class="click" onclick="displayFizzBuzz()">Click</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
