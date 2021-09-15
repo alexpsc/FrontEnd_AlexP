@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    
+<div class="container">
+
+<div class="logo" ><a href="/"> The <br>Weather<br> App</a></div>   
+    <div class="content">
+    <input type="text" class="search"  placeholder="Insert location">
+    </div>
+    <p class="error"></p>
+    <div class="buttons">
+    <button type="submit"class="btn btn1" >Show weather</button>
+    <button type="submit" class="btn btn2">Show forecast</button>
+    
+    </div>
+</div>
+
+<div class="flex-continer">
+
+<div class="weather_now">
+    <div class="weather">
+    <h2 class="city">Weather in </h2>
+    <h2 class="temp">0</h1>
+    <div class="flex back">
+    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+    <div class="description">Cloudy</div>
+    </div>
+    
+    <div class="humidity">Humidity: 60%</div>
+    <div class="pressure">Pressure</div>
+    <div class="min-day">Min of the day:</div>
+    <div class="max-day">Max of the day:</div>
+    </div>
+    <div id="pic">maps</div>
+</div>
+
+<div class="weather_forecast">
+    <h2 id="forecast-city"></h2>
+    <div id="days-list" >
+        <div class="day "></div>
+        <div class="day "></div>
+        <div class="day "></div>
+        <div class="day "></div>
+        <div class="day "></div>
+        <div class="day "></div>
+      </div>
+</div>
+
+</div>
+
+    
+</body>
+</html>
