@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form Validator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-form">
+				<form action="" class="form" id="form">
+					<h2>Contact us</h2>
+					<div id="first-input" class="form-item">
+						<label for="first-name">First Name</label>
+						<input id="first-name" placeholder="First Name" type="text" />
+						<small>Error message</small>
+					</div>
+					<div class="form-item">
+						<label for="last-name">Last Name</label>
+						<input id="last-name" placeholder="Last Name" type="text" />
+						<small>Error message</small>
+					</div>
+					<div class="form-item">
+						<label for="email">Email</label>
+						<input id="email" placeholder="Email" type="text" />
+						<small>Error message</small>
+					</div>
+					<div class="form-item">
+						<label for="message"></label>
+						<textarea
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="Your message here"
+						></textarea>
+						<small>Error message</small>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+			<div class="container-image">
+				<img src="images/form.png" alt="" />
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

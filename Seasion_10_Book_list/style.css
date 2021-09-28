@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#book-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.form-group input {
+  width: 80vh;
+  height: 2rem;
+  margin: 0.3rem;
+}
+
+#btn {
+  margin: 1rem;
+  padding: 0.7rem;
+  background-color: rgb(91, 155, 230);
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+i {
+  color: rgb(91, 155, 230);
+}
+
+.table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  font-size: 0.9em;
+  min-width: 80vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead {
+  text-align: left;
+}
+
+.table th {
+  padding-bottom: 1rem;
+}
+
+.table td {
+  padding-bottom: 1rem;
+}
+
+.alert {
+  display: flex;
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  font-size: 0.8rem;
+  width: 80vh;
+  height: 2rem;
+  align-self: center;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.danger {
+  background-color: crimson;
+}
+
+.succes {
+  background-color: green;
+}
+
+.info {
+  background-color: rgba(63, 161, 253, 0.986);
+}

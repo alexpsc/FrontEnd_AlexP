@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-   padding-right: 30px;
+  padding-right: 30px;
   background-color: #c5c3c3;
 }
 
@@ -52,8 +52,7 @@
   font-weight: bold;
 }
 
-
-.toggle-button{
+.toggle-button {
   position: absolute;
   top: 30px;
   right: 1rem;
@@ -62,10 +61,9 @@
   justify-content: space-between;
   width: 30px;
   height: 21px;
-
 }
 
-.toggle-button .bar{
+.toggle-button .bar {
   height: 3px;
   width: 100%;
   background-color: #008ccf;
@@ -237,40 +235,37 @@ input[type="submit"] {
   text-shadow: 0px 1px 4px black;
 }
 
-
 @media (max-width: 600px) {
-  .toggle-button{
-    display:flex;
+  .toggle-button {
+    display: flex;
   }
 
-  .nav__links{
-    display:none;
+  .nav__links {
+    display: none;
     width: 100%;
   }
 
-  .nav{
+  .nav {
     flex-direction: column;
     align-items: flex-start;
-    
   }
 
-  .nav__links{
+  .nav__links {
     width: 100%;
     flex-direction: column;
-      }
+  }
 
-  .nav__links.active{
+  .nav--links.active {
     display: flex;
-          }
+  }
 
-.container{
-  display: flex;
-  flex-direction: column;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.card  {
-  height: 100%;
-  width: 100%;
-}
-
+  .card {
+    height: 100%;
+    width: 100%;
+  }
 }

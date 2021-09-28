@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 8 - JS DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="confirmation_banner">Thank you for contacting us!</div>
+    <form action="">
+      <div class="container">
+        <div class="input__field">
+          <div class="name_input">
+            <input id="first_name" type="text" placeholder="First Name" />
+            <input id="last_name" type="text " placeholder="Last Name" />
+          </div>
+          <div class="gender">
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">M</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">F</label><br />
+            <p id="radioEmpty"></p>
+          </div>
+
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="your message here..."
+          ></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        <div class="contact_image">
+          <img src="firmbee-com-SpVHcbuKi6E-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

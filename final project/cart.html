@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Alex</title>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div class="logo"><a href="/index.html"> Foto Shop</a></div>
+        <div class="menu">
+          <div class="cart-btn">
+            <span class="nav-icon icon-hide toggle-button">
+              <i class="fas fa-bars"></i>
+            </span>
+          </div>
+          <div class="cart-btn">
+            <a href="cart.html">
+              <span class="nav-icon"> <i class="fas fa-cart-plus"></i> </span>
+              <div class="cart-items">0</div></a
+            >
+          </div>
+
+          <div class="cart-btn">
+            <span class="nav-icon"
+              ><a href="admin.html"><i class="fas fa-users-cog"></i></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="jumbotron text-center mt-5">
+      <div class="container">
+        <h1 class="jumbotron-heading">YOUR CART</h1>
+      </div>
+    </section>
+
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Available</th>
+                  <th scope="col" class="text-center">Quantity</th>
+                  <th scope="col" class="text-right">Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="cart-table" id="cart-table-products">
+                <!--Dynamicinsert-->
+              </tbody>
+            </table>
+            <table class="table table-striped" id="cart-table-priceCalc">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><strong>Total</strong></td>
+                  <td class="text-right">
+                    <strong id="total-price">0 €</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <button
+                class="btn btn-lg btn-block btn-light"
+                onclick="location.href='index.html'"
+              >
+                Continue Shopping
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-6 text-right">
+              <button class="banner-btn" onclick="location.href='index.html'">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fill"></div>
+
+    <footer class="bg-dark text-center text-white footer">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </section>
+
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id=""
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Made with ❤️ by Alex Pascu
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="./src/ui.js" type="module"></script>
+    <script src="./src/details.js" type="module"></script>
+    <script src="src/cart.js" type="module"></script>
+  </body>
+</html>

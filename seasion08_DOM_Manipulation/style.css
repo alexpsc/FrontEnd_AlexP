@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  width: 900px;
+  margin: 10px;
+}
+
+.input__field {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.contact_image img {
+  height: 250px;
+  width: 100%;
+  margin: 20px 10px 20px 70px;
+}
+
+.name_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.name_input input {
+  margin: 5px;
+}
+
+.gender {
+  padding: 5px;
+}
+textarea {
+  margin: 5px;
+  max-width: 300px;
+}
+
+#submit {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  background-color: #016abc;
+  color: #fff;
+  box-shadow: none;
+}
+
+.first_name_red,
+.last_name_red {
+  border: 1px red solid;
+}
+
+#radioEmpty {
+  color: red;
+}
+
+#confirmation_banner {
+  margin: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: springgreen;
+  width: 900px;
+  display: none;
+}

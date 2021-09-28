@@ -25,12 +25,12 @@ body {
 .content input {
   margin-left: 10rem;
   width: 50vh;
-  height: 6vh;
+  height: 5vh;
   border-radius: 1rem;
   border: none;
   background-color: #5bacc7;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -161,6 +161,11 @@ h2 {
 .forecast-date,
 .item {
   margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.item {
+  min-height: 150px;
 }
 
 .maps {

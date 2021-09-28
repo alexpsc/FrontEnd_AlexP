@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.container {
+	display: flex;
+	background-color: rgb(240, 245, 255);
+	border-radius: 10px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.container-form .form {
+	padding: 20px;
+	/* width: 400px; */
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+	outline: none;
+}
+
+.form-item label {
+	color: #777;
+	margin-bottom: 2px;
+	font-size: 15px;
+}
+
+.form-item input,
+.form-item textarea {
+	border: 2px solid white;
+	font-size: 16px;
+	padding: 2px;
+}
+.form button {
+	background-color: rgb(43, 145, 212);
+	color: white;
+	width: 100%;
+	font-size: 18px;
+}
+
+.form-item.error input,
+.form-item.error textarea {
+	border-color: #e74c3c;
+	border-radius: 4px;
+}
+
+.form-item.success input,
+.form-item.success textarea {
+	border-color: #2ecc71;
+	border-radius: 4px;
+}
+
+.form-item small {
+	visibility: hidden;
+}
+
+.form-item.error small {
+	visibility: visible;
+	color: #e74c3c;
+}
+
+p.success {
+	background-color: #2ecc71;
+	width: 100%;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding: 3px;
+}

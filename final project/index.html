@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Alex</title>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div class="logo"><a href="/index.html"> Foto Shop</a></div>
+        <div class="menu">
+          <div class="cart-btn">
+            <span class="nav-icon icon-hide toggle-button">
+              <i class="fas fa-bars"></i>
+            </span>
+          </div>
+          <div class="cart-btn">
+            <a href="cart.html">
+              <span class="nav-icon"> <i class="fas fa-cart-plus"></i> </span>
+              <div class="cart-items">0</div></a
+            >
+          </div>
+
+          <div class="cart-btn">
+            <span class="nav-icon"
+              ><a href="admin.html"><i class="fas fa-users-cog"></i></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">Online Store</h1>
+        <a class="banner-btn" href="#buy">shop now</a>
+      </div>
+    </header>
+
+    <!-- spinner -->
+    <div hidden id="spinner"></div>
+
+    <!-- products -->
+    <section class="products" id="buy">
+      <div class="section-title">
+        <h2 class="">our products</h2>
+      </div>
+      <div class="products-center">
+        <!-- single product -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="footer-icon" href="#!" role="button">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </section>
+
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id=""
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Made with ❤️ by Alex Pascu
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="./src/app.js" type="module"></script>
+  </body>
+</html>

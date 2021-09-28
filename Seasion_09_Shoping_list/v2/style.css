@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(247, 150, 195);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+
+form button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(247, 150, 195);
+}
+
+form button:hover {
+  background: white;
+  color: green;
+}
+
+.sl-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sl-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.sl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sl-item {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  min-width: 80%;
+  max-width: 90%;
+}
+
+.sort,
+.title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.titles {
+  margin: 0 11rem 0 12rem;
+  padding: 1rem;
+}
+.action {
+  margin-left: 14rem;
+}
+
+.fa-check {
+  pointer-events: none;
+}
+
+.display {
+  display: none;
+}
+
+.complete-btn {
+  background: rgb(247, 150, 195);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

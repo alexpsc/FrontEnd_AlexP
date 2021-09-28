@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping list</title>
+  </head>
+
+  <body>
+    <header>Shopping List</header>
+    <form>
+      <input type="text" class="sl-input" maxlength="30" />
+      <button class="sl-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+
+    <div class="sort">
+      <button class="icon sort-asc">
+        <i class="fas fa-sort-alpha-up"></i>
+      </button>
+      <button class="icon sort-dsc">
+        <i class="fas fa-sort-alpha-up-alt"></i>
+      </button>
+    </div>
+
+    <div class="sl-container">
+      <div class="title display">
+        <div class="titles">Item description</div>
+        <div class="titles action">Action</div>
+      </div>
+
+      <table class="sl-list"></table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
