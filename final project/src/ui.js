@@ -104,7 +104,7 @@ class UI {
       <td>
       <button
         type="button"
-        class="btn btn-dark modify"
+        class="btn btn-dark modify-product"
         id="${product.id}"
         data-toggle="modal"
         data-target="#deleteModal"

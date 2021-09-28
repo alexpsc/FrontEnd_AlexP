@@ -22,7 +22,9 @@ const closeModal = function () {
   modal[0].classList.add("hidden");
   modal[1].classList.add("hidden");
   overlay.classList.add("hidden");
+  addProductsToUi();
   ui.clearFields();
+
   // window.location.reload();
 };
 
@@ -46,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const url = "https://61439425c5b553001717d012.mockapi.io/articles";
-function addProductsToUi() {
+
+const addProductsToUi = function () {
   //get all products
 
   http.getProducts(url).then((products) => {
@@ -54,13 +57,16 @@ function addProductsToUi() {
     ui.addProductsAdmin(products);
     deleteProductFromDb();
     modifyProducts();
+    console.log("bam");
   });
+
   ui.updateCartIcon();
-}
+};
 
 //delete product from DB
 function deleteProductFromDb() {
   const deleteItemsDb = document.querySelectorAll(".delete");
+
   deleteItemsDb.forEach((deleteItemDb) => {
     deleteItemDb.addEventListener("click", (e) => {
       const id = e.target.id;
@@ -72,59 +78,6 @@ function deleteProductFromDb() {
           "bg-info"
         );
       });
-    });
-  });
-}
-
-function modifyProducts() {
-  const modifyBtns = document.querySelectorAll(".modify");
-  modifyBtns.forEach((modifyBtn) => {
-    modifyBtn.addEventListener("click", (e) => {
-      const modalM = document.querySelector(".modal-modify");
-      modalM.classList.remove("hidden");
-      overlay.classList.remove("hidden");
-      btnCloseModal[1].addEventListener("click", closeModal);
-
-      const id = e.target.id;
-      http
-        .getProducts(
-          `https://61439425c5b553001717d012.mockapi.io/articles/${id}`
-        )
-        .then((data) => {
-          console.log(data);
-          const name = document.querySelector("#name-mdf");
-          name.value = data.title;
-          const description = document.querySelector("#description-mdf");
-          description.value = data.description;
-          const url = document.querySelector("#url-mdf");
-          url.value = data.picture;
-          const price = document.querySelector("#price-mdf");
-          price.value = data.price;
-          const qty = document.querySelector("#qty-mdf");
-          qty.value = data.stoc;
-
-          const modify = document.querySelector(".modify");
-
-          modify.addEventListener("click", (e) => {
-            e.preventDefault();
-            closeModal();
-            const product = {
-              title: name.value,
-              picture: url.value,
-              price: price.value,
-              description: description.value,
-              stoc: qty.value,
-            };
-            http
-              .put(
-                `https://61439425c5b553001717d012.mockapi.io/articles/${id}`,
-                product
-              )
-              .then(() => {
-                addProductsToUi();
-              });
-          });
-        });
     });
   });
 }
@@ -160,14 +113,67 @@ function addToDb(e) {
   } else {
     http
       .post("https://61439425c5b553001717d012.mockapi.io/articles", product)
-      .then((data) => {
-        addProductsToUi();
+      .then(() => {
         closeModal();
 
-        ui.showConfirmation(
-          `Product ${data.title} has been succesfuly added!`,
-          "bg-info"
-        );
+        ui.showConfirmation(`Product has been succesfuly added!`, "bg-info");
+        addProductsToUi();
       });
   }
+}
+
+function modifyProducts() {
+  const modifyBtns = document.querySelectorAll(".modify-product");
+  modifyBtns.forEach((modifyBtn) => {
+    modifyBtn.addEventListener("click", (e) => {
+      const modalM = document.querySelector(".modal-modify");
+      modalM.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+      btnCloseModal[1].addEventListener("click", closeModal);
+
+      const id = e.target.id;
+      console.log(id);
+      http
+        .getProducts(
+          `https://61439425c5b553001717d012.mockapi.io/articles/${id}`
+        )
+        .then((data) => {
+          console.log(data);
+          const name = document.querySelector("#name-mdf");
+          name.value = data.title;
+          const description = document.querySelector("#description-mdf");
+          description.value = data.description;
+          const url = document.querySelector("#url-mdf");
+          url.value = data.picture;
+          const price = document.querySelector("#price-mdf");
+          price.value = data.price;
+          const qty = document.querySelector("#qty-mdf");
+          qty.value = data.stoc;
+
+          const modify = document.querySelector(".modify");
+          console.log(modify);
+          modify.addEventListener("click", (e) => {
+            e.preventDefault();
+            closeModal();
+
+            const product = {
+              title: name.value,
+              picture: url.value,
+              price: price.value,
+              description: description.value,
+              stoc: qty.value,
+            };
+            console.log(product);
+            http
+              .put(
+                `https://61439425c5b553001717d012.mockapi.io/articles/${id}`,
+                product
+              )
+              .then(() => {
+                return window.location.reload();
+              });
+          });
+        });
+    });
+  });
 }

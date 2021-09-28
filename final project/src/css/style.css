@@ -71,7 +71,8 @@ a {
   margin: 1rem;
 }
 
-.nav-items li:hover {
+.nav-items li,
+a:hover {
   color: var(--primaryColor);
   cursor: pointer;
 }
@@ -282,7 +283,9 @@ a {
 
 /* //detail page */
 .message {
-  width: 70vw;
+  width: 50vw;
+  display: block;
+  height: 2rem;
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
